@@ -19,7 +19,7 @@ function Menu() {
   return (
     <>
       <nav className="nav-1">
-        <ul className="text-link font-bold">
+        <ul className="text-link font-bold mt-5">
           <li>
             <Link
               to="/"

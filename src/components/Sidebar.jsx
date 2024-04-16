@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
 import Menu from "./Sidebar/Menu";
 
 function Sidebar() {
   return (
-    <aside className="w-80 py-7 min-h-80">
-      <img src={logo} alt="logo" className="h-8 mb-2 ps-8 " />
+    <aside className="py-7 min-h-80 w-[16%]" style={{ minWidth: "300px" }}>
+      <Link to="/">
+        <img src={logo} alt="logo" className="h-8 mb-2 ps-8 " />
+      </Link>
       <Menu class="bg-white" />
     </aside>
   );
