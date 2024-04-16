@@ -65,10 +65,6 @@ function Menu() {
                 style={{ fontSize: "20px" }}
                 className="absolute right-6  delay-100 transition hover:text-white"
               />
-              <FaArrowRight
-                style={{ fontSize: "16px" }}
-                className="absolute right-1 delay-100  transition hover:text-white"
-              />
             </Link>
           </li>
         </ul>
@@ -88,7 +84,7 @@ function Menu() {
           </ul>
         ) : (
           <ul
-            className="flex flex-row justify-around gap-x-4 pt-4  mx-auto w-100 ps-10"
+            className="flex flex-row justify-around gap-x-3 pt-4  mx-auto w-100 ps-5"
             style={{ fontSize: "14px" }}
           >
             <li>
@@ -127,6 +123,204 @@ function Menu() {
         style={{ maxHeight: "calc(100% - 15rem)" }}
       >
         <ul>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row items-center my-3">
+            <img src={liked} alt="item_img" className="rounded h-12" />
+            <div className="pl-4">
+              <h2>Beğenilen Şarkılar</h2>
+              <p className="text-detail flex-row flex items-center opacity-80">
+                Çalma Listesi <PiDotOutlineFill /> Buğra
+              </p>
+            </div>
+          </li>
           <li className="flex flex-row items-center my-3">
             <img src={liked} alt="item_img" className="rounded h-12" />
             <div className="pl-4">
