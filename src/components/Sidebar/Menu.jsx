@@ -2,30 +2,46 @@ import { IoHomeOutline } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { HiOutlineBookmark } from "react-icons/hi";
 import { FiPlus } from "react-icons/fi";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Menu() {
+  let location = useLocation();
+  useEffect(() => {
+    location;
+  }, []);
+
   return (
     <nav>
       <ul className="text-link font-bold">
         <li>
-          <a className="flex h-12 gap-x-5 items-center text-white bg-active rounded ps-8" href="">
+          <Link
+            to="/"
+            className={`flex h-12 gap-x-5 items-center hover:text-white transition rounded delay-100 ps-8 ${
+              location.pathname === "/" ? "bg-active text-white" : ""
+            }`}
+          >
             <IoHomeOutline style={{ fontSize: "24px" }} />
             Ana sayfa
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            className="flex h-12 gap-x-5 items-center hover:text-white transition rounded delay-100 ps-8"
-            href=""
+          <Link
+            to="/search"
+            className={`flex h-12 gap-x-5 items-center hover:text-white transition rounded delay-100 ps-8 ${
+              location.pathname === "/search" ? "bg-active text-white" : ""
+            }`}
           >
-            <IoSearch style={{ fontSize: "24px" }}  />
+            <IoSearch style={{ fontSize: "24px" }} />
             Ara
-          </a>
+          </Link>
         </li>
         <li className="relative">
-          <a
-            className="flex h-12 gap-x-3 items-center hover:text-white transition rounded delay-100 mt-5 ps-8"
-            href=""
+          <Link
+            to="/collection"
+            className={`flex h-12 gap-x-5 items-center hover:text-white transition rounded delay-100 ps-8 ${
+              location.pathname === "/collection" ? "bg-active text-white" : ""
+            }`}
           >
             <HiOutlineBookmark style={{ fontSize: "24px" }} />
             Kitaplığın
@@ -33,7 +49,7 @@ function Menu() {
               style={{ fontSize: "20px" }}
               className="absolute right-0.5"
             />
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
