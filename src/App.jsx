@@ -1,10 +1,8 @@
-import Home from "./screens/home";
+
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
