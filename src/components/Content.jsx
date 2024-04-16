@@ -1,9 +1,12 @@
-import React from 'react'
+import Navbar from "./Navbar";
 
 function Content() {
   return (
-    <main>Content</main>
-  )
+    <main className="fle-auto">
+      <Navbar />
+      Content
+    </main>
+  );
 }
 
-export default Content
+export default Content;

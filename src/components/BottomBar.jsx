@@ -1,9 +1,5 @@
-import React from 'react'
-
 function BottomBar() {
-  return (
-    <div>BottomBar</div>
-  )
+  return <div className="h-24">BottomBar</div>;
 }
 
-export default BottomBar
+export default BottomBar;
