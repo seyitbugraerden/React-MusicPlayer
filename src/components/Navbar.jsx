@@ -1,6 +1,6 @@
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import { CiShare1 } from "react-icons/ci";
@@ -10,7 +10,7 @@ import { CiSearch } from "react-icons/ci";
 
 function Navbar() {
   const navigate = useNavigate();
-
+  const location = useLocation();
   const items = [
     {
       label: (
@@ -87,11 +87,15 @@ function Navbar() {
               left: "10px",
             }}
           />
-          <input
-            className="bg-white text-black w-[400px] py-2 border-0 outline-none focus:border-0 focus:outline-none active:border-0 active:outline-none relative rounded-full"
-            placeholder="Sanatçı, Albüm veya Çalma Listesi"
-            style={{ zIndex: "0", paddingLeft: "50px" }}
-          />
+          {location.pathname === "/search" ? (
+            <input
+              className="bg-white text-black w-[400px] py-2 border-0 outline-none focus:border-0 focus:outline-none active:border-0 active:outline-none relative rounded-full"
+              placeholder="Sanatçı, Albüm veya Çalma Listesi"
+              style={{ zIndex: "0", paddingLeft: "50px" }}
+            />
+          ) : (
+            ""
+          )}
         </span>
       </span>
 
