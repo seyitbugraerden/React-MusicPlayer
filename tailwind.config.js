@@ -11,6 +11,9 @@ export default {
         link: "#b3b3b3",
         footer: "#181818",
       },
+      fontSize:{
+        detail : '10px'
+      }
     },
   },
   plugins: [],
