@@ -711,8 +711,16 @@ html,
   width: 28%;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
 }
 
 .cursor-pointer {
