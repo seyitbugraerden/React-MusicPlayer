@@ -4,7 +4,9 @@ import Menu from "./Sidebar/Menu";
 
 function Sidebar() {
   return (
-    <aside className="py-7 min-h-80 w-[16%]" style={{ minWidth: "300px" }}>
+    <aside
+      className="py-7 min-h-80 w-[28%]"
+    >
       <Link to="/">
         <img src={logo} alt="logo" className="h-14 mb-2 ps-8 " />
       </Link>

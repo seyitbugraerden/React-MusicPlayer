@@ -44,8 +44,13 @@ function Home() {
     },
   ];
   return (
-    <div className="pe-10">
-      <Section title="Son Oynatılanlar" more="Tümünü Gör" items={items} />
+    <div
+      className="pe-10" id="style-2"
+    >
+      <Section title="Son Oynatılanlar" more="lastsongs" items={items} />
+      <Section title="En Çok Dinlenenler" more="mostlyplayed" items={items} />
+      <Section title="En Çok Dinlenenler" more="mostlyplayed" items={items} />
+      <Section title="En Çok Dinlenenler" more="mostlyplayed" items={items} />
     </div>
   );
 }

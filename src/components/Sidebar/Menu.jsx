@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { IoHomeOutline } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { HiOutlineBookmark } from "react-icons/hi";
@@ -88,7 +89,7 @@ function Menu() {
 
   useEffect(() => {
     setSelectedItems(items);
-  }, []);
+  }, [ ]);
   return (
     <>
       <nav className="nav-1">
