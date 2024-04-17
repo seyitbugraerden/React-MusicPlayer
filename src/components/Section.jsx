@@ -19,7 +19,7 @@ function Section({ title, more = false, items }) {
           </Link>
         )}
       </header>
-      <div className="grid grid-cols-5 gap-x-6">
+      <div className="grid grid-cols-5 m:grid-cols-7 gap-x-6">
         {items.map((item) => (
           <>
             <div className="relative bg-footer group hover:bg-active">
@@ -51,8 +51,9 @@ function Section({ title, more = false, items }) {
                 </p>
               </Link>
               <Link
-                className="absolute right-8 top-[170px] hover:scale-110 group-focus:opacity-100 transition delay-75 opacity-0 group-hover:opacity-100"
+                className="hover:scale-110 group-focus:opacity-100 transition delay-75 opacity-0 group-hover:opacity-100"
                 to="/search"
+                style={{position:'absolute',bottom:'90px', right:'30px'}}
               >
                 <IoIosPlay className="text-5xl bg-green-500 rounded-full px-2 pl-3 text-white" />
               </Link>

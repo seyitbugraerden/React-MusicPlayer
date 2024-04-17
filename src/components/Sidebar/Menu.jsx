@@ -143,7 +143,7 @@ function Menu() {
         </ul>
         {selectedFilter ? (
           <ul
-            className="flex flex-row gap-x-4  pt-4 mx-auto w-100 ps-8 items-center"
+            className="flex flex-row pe-4 pt-4 mx-auto w-100 ps-8 items-center"
             style={{ fontSize: "14px" }}
           >
             <li
