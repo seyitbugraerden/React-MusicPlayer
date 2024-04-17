@@ -8,7 +8,10 @@ import { useEffect, useState } from "react";
 import { PiDotOutlineFill } from "react-icons/pi";
 function Menu() {
   const [selectedFilter, setSelectedFilter] = useState("");
-  const [items, setItems] = useState([
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  let location = useLocation();
+  const items = [
     {
       id: "1",
       title: "Song 1",
@@ -54,10 +57,37 @@ function Menu() {
       type: "Çalma Listesi",
       owner: "Zeynep Aktaş",
     },
-  ]);
-  let location = useLocation();
+    {
+      id: "6",
+      title: "Song 6",
+      description: "Desc 6",
+      image:
+        "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb28da7480a223ede516f57159/3/tr/default",
+      type: "Albüm",
+      owner: "Zeynep Aktaş",
+    },
+    {
+      id: "7",
+      title: "Song 7",
+      description: "Desc 7",
+      image:
+        "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebaf38c0565f1b25edd75334ee/4/tr/default",
+      type: "Sanatçı",
+      owner: "Zeynep Aktaş",
+    },
+    {
+      id: "8",
+      title: "Song 8",
+      description: "Desc 8",
+      image:
+        "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebbc7571668a90592e6ecac62b/5/tr/default",
+      type: "Çalma Listesi",
+      owner: "Zeynep Aktaş",
+    },
+  ];
+
   useEffect(() => {
-    location;
+    setSelectedItems(items);
   }, []);
   return (
     <>
@@ -121,7 +151,12 @@ function Menu() {
                 setSelectedFilter("");
               }}
             >
-              <LiaTimesSolid style={{ fontSize: "20px", cursor: "pointer" }} />
+              <LiaTimesSolid
+                style={{ fontSize: "20px", cursor: "pointer" }}
+                onClick={() => {
+                  setSelectedItems(items);
+                }}
+              />
             </li>
             <li className="ps-2">{selectedFilter}</li>
           </ul>
@@ -134,6 +169,11 @@ function Menu() {
               <Link
                 onClick={(e) => {
                   setSelectedFilter(e.target.textContent);
+                  setSelectedItems(
+                    selectedItems.filter(
+                      (item) => item.type === "Çalma Listesi"
+                    )
+                  );
                 }}
               >
                 Çalma Listesi
@@ -143,6 +183,9 @@ function Menu() {
               <Link
                 onClick={(e) => {
                   setSelectedFilter(e.target.textContent);
+                  setSelectedItems(
+                    selectedItems.filter((item) => item.type === "Sanatçı")
+                  );
                 }}
               >
                 Sanatçılar
@@ -152,6 +195,9 @@ function Menu() {
               <Link
                 onClick={(e) => {
                   setSelectedFilter(e.target.textContent);
+                  setSelectedItems(
+                    selectedItems.filter((item) => item.type === "Albüm")
+                  );
                 }}
               >
                 Albümler
@@ -166,7 +212,7 @@ function Menu() {
         style={{ maxHeight: "calc(100% - 18rem)" }}
       >
         <ul>
-          {items.map((item) => (
+          {selectedItems.map((item) => (
             <>
               {item.type !== "Çalma Listesi" && item.type !== "Albüm" ? (
                 <Link>
